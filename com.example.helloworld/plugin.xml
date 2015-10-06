@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Hello Category"
+            id="com.example.helloworld">
+      </category>
+      <view
+            name="Hello View"
+            icon="icons/sample.gif"
+            category="com.example.helloworld"
+            class="com.example.helloworld.HelloWorldView"
+            id="com.example.helloworld.HelloWorldView">
+      </view>
+      <category
+            id="com.example.helloworld.view.helloworldcategory"
+            name="hellow World!">
+      </category>
+      <view
+            category="com.example.helloworld.view.helloworldcategory"
+            class="com.example.helloworld.view.SampleView"
+            id="com.example.helloworld.view.helloworldview"
+            name="Hello World!"
+            restorable="true">
+      </view>
+      <view
+            class="com.example.helloworld.ViewPart1"
+            id="com.example.helloworld.view.helloworldview"
+            name="name"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+
+</plugin>
