@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.example.helloworld.view;
 
    import org.eclipse.swt.widgets.Composite;
    import org.eclipse.swt.widgets.Label;
@@ -11,7 +11,7 @@ package com.example.helloworld;
       }
       public void createPartControl(Composite parent) {
          label = new Label(parent, SWT.WRAP);
-         label.setText("Hello World");
+         label.setText("Hello from HelloWorldView.java");
       }
       public void setFocus() {
          // set focus to my widget.  For a label, this doesn't
