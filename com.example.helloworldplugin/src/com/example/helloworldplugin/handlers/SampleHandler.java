@@ -16,7 +16,10 @@ public class SampleHandler extends AbstractHandler {
 	/**
 	 * The constructor.
 	 */
+	public long startTime;
+	
 	public SampleHandler() {
+		startTime = System.currentTimeMillis();
 	}
 
 	/**
@@ -25,10 +28,16 @@ public class SampleHandler extends AbstractHandler {
 	 */
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
+		
+		long estimatedTime = System.currentTimeMillis() - startTime;
+		estimatedTime /= 1000;
+		String hw = "Total Elapse time: " + estimatedTime;
+		
 		MessageDialog.openInformation(
 				window.getShell(),
 				"Helloworldplugin",
-				"Hello, Eclipse world");
+				hw);
+		
 		return null;
 	}
 }
