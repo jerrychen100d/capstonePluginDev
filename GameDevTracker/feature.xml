@@ -16,6 +16,10 @@
       [Enter License Description here.]
    </license>
 
+   <url>
+      <update url="https://github.com/jerrychen100d/capstonePluginDev/releases/tag/v1"/>
+   </url>
+
    <plugin
          id="rabbit.common"
          download-size="0"
