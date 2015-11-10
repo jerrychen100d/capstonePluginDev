@@ -1,7 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="https://github.com/jerrychen100d/capstonePluginDev/releases/tag/v1">
-      pre-release
-   </description>
-   <feature url="features/GameDevTracker_1.0.0.201511031146.jar" id="GameDevTracker" version="1.0.0.201511031146"/>
 </site>
